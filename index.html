@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./css/@media.css">
+   <title>Kalipta</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- header -->
+      <header id="header" class="header">
+         <div class="header__container">
+            <div class="header__header">
+               <div class="header__logo">
+                  <a href="#main">
+                     <img class="header__logo-img" src="./img/header/svg/Лого.svg" alt="Лого">
+                  </a>
+               </div>
+               <div class="header__info">
+                  <div class="header__info-week">
+                     <div class="header__info-time">
+                        <p class="header__info-time-p">Понедельник - Воскресенье <span>10:00 - 22:00</span></p>
+                     </div>
+                     <div id="open_modal-pop-ups" class="header__info-signup button-popup">
+                        <img width="35" height="35" src="./img/header/svg/Calendar.svg" alt="Календарь">
+                        <a href="main">
+                           <p>Записаться</p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="header__info-today">
+                     <p>Запишитесь на прием сегодня</p>
+                     <p class="header__info-todaynumber">+7<span>(800)</span>555-35-35</p>
+                     <a href=""><img width="39" height="39" src="./img/header/svg/Phone.svg" alt="Телефон"></a>
+                  </div>
+               </div>
+            </div>
+            <!--  -->
+            <div class="btn-group-burgersmenu">
+               <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                     <li class="menunav__links"><a href="#main">Главная</a></li>
+                     <li class="menunav__links"><a href="#ourworks2">О нас</a></li>
+                     <li class="menunav__link-services"><a href="#main__services">
+                           <div class="btn-group">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                 Услуги
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                 <li><button class="dropdown-item" type="button"> Услуга 1</button></li>
+                                 <li><button class="dropdown-item" type="button"> Услуга 2</button></li>
+                                 <li><button class="dropdown-item" type="button"> Услуга 3</button></li>
+                              </ul>
+                           </div>
+                     </li></a>
+                     <li class="menunav__links"><a href="#main__evaluation">Прайс</a></li>
+                     <li class="menunav__links"><a href="#quality">Акции</a></li>
+                     <li class="menunav__links"><a href="#main__video">Галерея</a></li>
+                     <li class="menunav__links"><a href="#main__slider">Отзывы</a></li>
+                     <li class="menunav__links"><a href="#main__whywe">Вопросы</a></li>
+                     <li class="menunav__links"><a href="#footer">Контакты</a></li>
+                     <a href="#"><img class="burger__imges" src="./img/header/svg/ЛогоMini.svg" alt="ЛогоМини"></a>
+                  </div>
+               </div>
+               <nav class="navbar navbar-dark bg-dark">
+                  <div class="container-fluid">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                  </div>
+               </nav>
+            </div>
+            <!--  -->
+            <nav class="header__menunav menunav">
+               <ul class="menunav__list menunav__list-burger ">
+                  <li class="menunav__link"><a href="#main">Главная</a></li>
+                  <li class="menunav__link"><a href="#ourworks1">О нас</a></li>
+                  <li class="menunav__link"><a href="#main__services">Услуги</a></li>
+                  <li class="menunav__link"><a href="#main__evaluation">Прайс</a></li>
+                  <li class="menunav__link"><a href="#quality">Акции</a></li>
+                  <li class="menunav__link"><a href="#main__video">Галерея</a></li>
+                  <li class="menunav__link"><a href="#main__slider">Отзывы</a></li>
+                  <li class="menunav__link"><a href="#main__whywe">Вопросы</a></li>
+                  <li class="menunav__link"><a href="#footer">Контакты</a></li>
+               </ul>
+            </nav>
+            <div class="header__repair">
+               <div class="header__repair-image"></div>
+               <p class="header__repair-cycle">Полный цикл</p>
+               <h2>Грузовой Ремонт</h2>
+               <h2>И Обслуживание</h2>
+               <p class="header__repair-ten">Более 10 Лет Качественной Работы</p>
+            </div>
+         </div>
+         <!--  -->
+         <div class="header__headerimg">
+            <img src="./img/header/HeaderIMG.jpg" alt="Фон для header">
+         </div>
+      </header>
+      <div id="popups" class="popup">
+         <div class="pop__up-container">
+            <div id="pop__up-bodys" class="pop__up-body">
+               <div class="pop__up-bodyheader">Запланируйте<p> обслуживание <span>автомобиля</span></p>
+               </div>
+               <p class="pop__up-bodytext">Чтобы записаться на прием, позвоните нам по телефону
+                  1-800-123-4567 или заполните форму
+                  ниже,
+                  указав информацию о себе и желаемых услугах.</p>
+               <form class="pop__up-form" action="">
+                  <h2>Контактная информация</h2>
+                  <input tabindex="1" class="form-form-form" placeholder="Ваше имя" type="text">
+                  <input tabindex="2" class="form-form-form" placeholder="Номер телефона" type="number">
+                  <input tabindex="3" placeholder="Email" type="email">
+                  <h2>Информация о авто</h2>
+                  <input tabindex="4" placeholder="Марка" type="text">
+                  <input tabindex="5" placeholder="Модель" type="number">
+                  <input tabindex="6" placeholder="Год" type="number">
+                  <h2>Уточните детали</h2>
+                  <input tabindex="7" type="date">
+                  <input tabindex="8" placeholder="10:00" type="number">
+                  <div class="pop__up-bodylabelblock">
+                     <label class="pop__up-bodylabel" for="file">
+                        <span> Выберите фото</span>
+                        <input id="file" class="pop__up-form-file" tabindex="9" placeholder="Выберите фото" type="file">
+                     </label>
+                  </div>
+                  <button><a href=""> Подтвердить</a></button>
+                  <p>Обратите внимание, что запрошенные вами дата и время могут быть недоступны.</p>
+               </form>
+               <div id="pop__up-closes" class="pop__up-close">&#10006;</div>
+            </div>
+         </div>
+      </div>
+      <!-- main -->
+      <main id="main" class="main">
+         <div class="main__container">
+            <div class="main__title title">
+               <h2 class="title__wedo">Что мы делаем</h2>
+               <p class="title__text">Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+               <div class="title__line"></div>
+            </div>
+         </div>
+         <div class="main__wedo main__wedo-container">
+            <div class="element1">
+               <h3 class="element1__title">Тормоза </br>
+                  Ремонт и обслуживаение</h3>
+               <p class="element1__text">Техническое обслуживание тормозов имеет большое значение для обеспечения
+                  обеспечить безопасность вас и ваших
+                  пассажиров</p>
+               <p class="element1__name">Тормоза</p>
+            </div>
+            <div class="element2"><img src="./img/main/wedo/OIL.png" alt="Масло"></div>
+            <div class="element3">
+               <h3 class="element3__title">Частые проблемы</h3>
+               <p class="element3__text">У нас есть более 30 распространенных видов ремонта грузовиков
+                  и этот список постоянно растет</p>
+               <p class="element3__name">Ремонт</p>
+            </div>
+            <div class="element4"><img src="./img/main/wedo/element-4.png" alt="element-4"></div>
+            <div class="element5">
+               <h3 class="element5__title">Профилактика</h3>
+               <p class="element5__text">Лучший способ свести к минимуму поломки - проводить плановое техническое
+                  обслуживание</p>
+               <p class="element5__name">Обслуживание</p>
+            </div>
+            <div class="element6"><img src="./img/main/wedo/element-5.png" alt=""></div>
+         </div>
+         <div class="main__guarantee main__container">
+            <div class="main__guarantee guarantee__title">
+               <h3 class="guarantee__title-title">100% Гарантия результата</h3>
+               <p class="guarantee__title-text">Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+            </div>
+            <div class="main__guarantee guarantee__elements">
+               <div class="guarantee__elements1-modal">
+                  <p class="guarantee__elements-modal-string"></p>
+                  <div class="guarantee__elements-modal-title">
+                     <h3 class="guarantee__elements-modal-title-title">Делаем все модели</h3>
+                     <p class="guarantee__elements-modal-title-text">Мы предоставляем разнообразные услуги по ремонту и
+                        обслуживанию автомобилей всех марок и моделей, даже экзотических и старинных.</p>
+                  </div>
+               </div>
+               <div class="guarantee__elements2-services">
+                  <p class="guarantee__elements-modal-string"></p>
+                  <div class="guarantee__elements-modal-title">
+                     <h3 class="guarantee__elements-modal-title-title">Широкий спектр услуг</h3>
+                     <p class="guarantee__elements-modal-title-text">Главный принцип нашей работы - предлагать широкий
+                        спектр качественных услуг по ремонту автомобилей, и мы делаем это с первого дня нашей работы.
+                     </p>
+                  </div>
+               </div>
+               <div class="guarantee__elements3-support">
+                  <p class="guarantee__elements-modal-string"></p>
+                  <div class="guarantee__elements-modal-title">
+                     <h3 class="guarantee__elements-modal-title-title">Качественная поддержка</h3>
+                     <p class="guarantee__elements-modal-title-text">Наш сервис предлагает качественную программу
+                        поддержки для любых авто, которая позволяет им всегда оставаться полностью исправными.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="main__services" class="main__services">
+            <div class="main__container">
+               <div class="block__info">
+                  <div class="block__service">
+                     <h3 class="block__service-title">Услуги по ремонту,которые мы <span> предлагаем</span></h3>
+                     <p class="block__service-text">Мы предоставляем полный спектр услуг по механическому ремонту
+                        передней части автомобиля для всех
+                        марок и моделей автомобилей, независимо от причины. Сюда входит все: от стоек, амортизаторов и
+                        наконечников тяг до шаровых шарниров, пружин и практически всего, что входит в ремонт передней
+                        части автомобиля.</p>
+                     <button class="block__service-btnstart"><img src="./img/main/svg/CalendarWhite.svg"
+                           alt="Белый Календарь"><a href="#">Записаться</a> </button>
+                  </div>
+                  <div class="block__list1">
+                     <ul>
+                        <li class="block__list-element"> Общий ремонт и техническое обслуживание
+                        </li>
+                        <li class="block__list-element">Оси CV
+                        </li>
+                        <li class="block__list-element">Выравнивание колес
+                        </li>
+                        <li class="block__list-element">Ремонт системы запуска и зарядки
+                        </li>
+                        <li class="block__list-element">Диагностика электрооборудования
+                        </li>
+                        <li class="block__list-element">Обслуживание системы охлаждения двигателя
+                        </li>
+                        <li class="block__list-element">Ремонт выхлопной системы
+                        </li>
+                        <li class="block__list-element">Ремонт топливной системы
+                        </li>
+                        <li class="block__list-element">Ремонт и замена трансмиссии
+                        </li>
+                        <li class="block__list-element">Компьютерная диагностика</li>
+                     </ul>
+                  </div>
+                  <div class="block__list2">
+                     <ul>
+                        <li class="block__list-element">Общий ремонт и техническое обслуживание
+                        </li>
+                        <li class="block__list-element">Оси CV
+                        </li>
+                        <li class="block__list-element">Выравнивание колес
+                        </li>
+                        <li class="block__list-element">Ремонт системы запуска и зарядки
+                        </li>
+                        <li class="block__list-element">Диагностика электрооборудования
+                        </li>
+                        <li class="block__list-element">Обслуживание системы охлаждения двигателя
+                        </li>
+                        <li class="block__list-element">Ремонт выхлопной системы
+                        </li>
+                        <li class="block__list-element">Ремонт топливной системы
+                        </li>
+                        <li class="block__list-element">Ремонт и замена трансмиссии
+                        </li>
+                        <li class="block__list-element">Компьютерная диагностика</li>
+                     </ul>
+                  </div>
+                  <button class="block__service-btnend"><img src="./img/main/svg/CalendarWhite.svg"
+                        alt="Белый Календарь"><a href="#">Записаться</a> </button>
+               </div>
+            </div>
+         </div>
+         <div id="quality" class="main__quality">
+            <div class="quality">
+               <div class="quality__container">
+                  <div class="quality__info">
+                     <div class="quality__info-picture">
+                        <div class="quality__info-picture-img">
+                           <img src="./img/main/Клёса.png" alt="Черные колёса">
+                        </div>
+                        <div class="quality__info-picture-discount">
+                           <div class="quality__info-picture-blockdiscount">
+                              <p class="quality__info-picture-blockdiscount1">Скидка на</p>
+                              <p class="quality__info-picture-blockdiscount2">- 10%</p>
+                              <p class="quality__info-picture-blockdiscount3">На ремонт!</p>
+                           </div>
+                           <div class="quality__info-picture-block-limited">
+                              <p class="quality__info-picture-block-limited1">Ограниченное
+                                 предложение</p>
+                              <p class="quality__info-picture-block-limited2">для услуг свыше 5000р</p>
+                              <button class="quality__info-picture-block-limited3"><a href="#"> Подробнее</a></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="quality__info-text">
+                        <h3>Качественное обслуживание и удовлетворенность <span>клиентов!</span></h3>
+                        <div class="quality__info-text-arrow"></div>
+                        <p class="quality__info-text-text">Мы используем новейшее диагностическое оборудование, чтобы
+                           гарантировать, что ваш автомобиль
+                           будет отремонтирован или обслужен правильно и своевременно. Мы являемся членом Professional
+                           Auto Service, элитной сети, в которой независимые сервисные центры объединены общими целями -
+                           быть центрами обслуживания автомобилей мирового класса.</p>
+                        <ul class="quality__info-text-list">
+                           <li>Гарантия 24 месяца / 24 000 км по всей стране
+                           </li>
+                           <li>Круглосуточная помощь на дорогах
+                           </li>
+                           <li>Сертифицированные технические специалисты ASE
+                           </li>
+                           <li>Программа поощрения клиентов
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="ourworks1" class="main__our-works ">
+            <div class="our-works">
+               <div class="our-works__background">
+                  <img class="our-works__background-img" src="./img/main/our-works/Fon-4Elements-Main.png"
+                     alt="Фон для 4-х элементов main">
+                  <div class="our-works__pictures-text __container">
+                     <h3>Наш цикл <span>работы</span> </h3>
+                     <p>Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+                  </div>
+                  <div class="our-works__pictures">
+                     <div class="our-works__pictures-slide1">
+                        <div class="our-works__pictures-slide1-namber">
+                           <p>1</p>
+                        </div>
+                        <div class="our-works__pictures-slide1-pic">
+                           <img src="./img/main/our-works/Элемент-1.png" alt="Картинка к элементу 1">
+                           <p class="our-works__pictures-slide1-text"><a href="#"> Сделайте
+                                 заявку </a></p>
+                        </div>
+                     </div>
+                     <div class="our-works__pictures-slide1">
+                        <div class="our-works__pictures-slide2-namber">
+                           <p>2</p>
+                        </div>
+                        <div class="our-works__pictures-slide2-pic">
+                           <img src="./img/main/our-works/Элемент-2.png" alt="Картинка к элементу 2">
+                           <p class="our-works__pictures-slide1-text"><a href="#"> Выберите услугу</p></a>
+                        </div>
+                     </div>
+                     <div class="our-works__pictures-slide1">
+                        <div class="our-works__pictures-slide3-namber">
+                           <p>3</p>
+                        </div>
+                        <div class="our-works__pictures-slide3-pic">
+                           <img src="./img/main/our-works/Элемент-3.png" alt="Картинка к элементу 3">
+                           <p class="our-works__pictures-slide1-text"><a href="#"> Подтвердите
+                                 запись </a></p>
+                        </div>
+                     </div>
+                     <div class="our-works__pictures-slide1">
+                        <div class="our-works__pictures-slide4-namber">
+                           <p>4</p>
+                        </div>
+                        <div class="our-works__pictures-slide4-pic">
+                           <img src="./img/main/our-works/Элемент-4.png" alt="Картинка к элементу 4">
+                           <p class="our-works__pictures-slide1-text"><a href="#"> Получите
+                                 вашу машину </a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="ourworks2" class="main__ourworksSmall">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                     aria-label="Slide 4"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active ourworksSmall">
+                     <h4 class="ourworksSmall__title">Наш цикл <span>работы</span></h4>
+                     <p class="ourworksSmall__text">Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+                     <p class="ourworksSmall__textnumber">1</p>
+                     <img class="d-block w-100 ourworksSmall__image" src="./img/main/our-works/Элемент-1.png"
+                        alt="Элемент 1">
+                     <p class="ourworksSmall__textPic">Сделайте заявку</p>
+                  </div>
+                  <div class="carousel-item ourworksSmall">
+                     <h4 class="ourworksSmall__title">Наш цикл <span>работы</span></h4>
+                     <p class="ourworksSmall__text">Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+                     <p class="ourworksSmall__textnumber">2</p>
+                     <img class="d-block w-100 ourworksSmall__image" src="./img/main/our-works/Элемент-2.png"
+                        alt="Элемент 2">
+                     <p class="ourworksSmall__textPic">Выберите услугу</p>
+                  </div>
+                  <div class="carousel-item ourworksSmall">
+                     <h4 class="ourworksSmall__title">Наш цикл <span>работы</span></h4>
+                     <p class="ourworksSmall__text">Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+                     <p class="ourworksSmall__textnumber">3</p>
+                     <img class="d-block w-100 ourworksSmall__image" src="./img/main/our-works/Элемент-3.png"
+                        alt="Элемент 3">
+                     <p class="ourworksSmall__textPic">Подтвердите запись</p>
+                  </div>
+                  <div class="carousel-item ourworksSmall">
+                     <h4 class="ourworksSmall__title">Наш цикл <span>работы</span></h4>
+                     <p class="ourworksSmall__text">Мы предлагаем полный перечень услуг ремонта и обслуживания</p>
+                     <p class="ourworksSmall__textnumber">4</p>
+                     <img class="d-block w-100 ourworksSmall__image" src="./img/main/our-works/Элемент-4.png"
+                        alt="Элемент 4">
+                     <p class="ourworksSmall__textPic4">Получите вашу машину</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="main__whywe" class="main__whywe __container">
+            <div class="main__whywe-title whywe">
+               <h3 class="whywe__title">Почему стоит выбрать наш сервис?</h3>
+               <p class="whywe__text">Мы сотрудничаем с многими компаниями,
+                  чтобы предложить вам самые современные сметы по справедливой цене</p>
+               <div class="whywe__arrow"></div>
+            </div>
+            <div class="main__whywe-blocks whywe__block">
+               <div class="whywe__block-one">
+                  <img src="./img/main/block-whywe/svg/Block1.svg" alt="Человек поиск" class="whywe__block-one-image">
+                  <h4 class="whywe__block-title">Оценка</h4>
+                  <p class="whywe__block-text">Мы предлагаем вам наиболее точные и справедливые по цене оценки услуг</p>
+               </div>
+               <div class="whywe__block-two">
+                  <img src="./img/main/block-whywe/svg/Block2.svg" alt="Красный планшет" class="whywe__block-one-image">
+                  <h4 class="whywe__block-title">Проверенные</h4>
+                  <p class="whywe__block-text">Доверенные сервисные центры
+                     сертифицированы на высокое качество</p>
+               </div>
+               <div class="whywe__block-three">
+                  <img src="./img/main/block-whywe/svg/Block3.svg" alt="Билет скидка" class="whywe__block-one-image">
+                  <h4 class="whywe__block-title">Гарантия</h4>
+                  <p class="whywe__block-text">Возмещение стоимости деталей и трудозатрат на соответствующие ремонту и
+                     обслуживанию в течение 24 месяцев/24 000 миль</p>
+               </div>
+            </div>
+         </div>
+         <div id="main__slider" class="main__slider">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="./img/main/фон-блок-Слайдер.png" class="d-block w-100" alt="фон-блок-Слайдер">
+                     <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption-images">
+                           <img src="./img/main/Слайдер-отзывы/Отзыв-Дальнобощик.png" alt="Дальнобощик">
+                           </br>
+                           <img class="carousel-caption-images-star" src="./img/main/svg/Star.svg" alt="">
+                           <h5>Я отвез туда свою машину, чтобы починить ее после того, как в меня врезались и погнули
+                              задний верхний рычаг управления. Они дали мне лучшую оценку, и работа была выполнена очень
+                              быстро! Обслуживание клиентов было потрясающим, они были очень вежливыми и знающими!</h5>
+                           <p><span> Алексей Алексеев</span> Дальнобойщик</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/main/фон-блок-Слайдер.png" class="d-block w-100" alt="фон-блок-Слайдер">
+                     <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption-images">
+                           <img src="./img/main/Слайдер-отзывы/Отзыв-Дальнобощик.png" alt="Дальнобощик">
+                           </br>
+                           <img class="carousel-caption-images-star" src="./img/main/svg/Star.svg"
+                              alt="Оценка звезда 5/5">
+                           <h5>Я отвез туда свою машину, чтобы починить ее после того, как в меня врезались и погнули
+                              задний верхний рычаг управления. Они дали мне лучшую оценку, и работа была выполнена очень
+                              быстро! Обслуживание клиентов было потрясающим, они были очень вежливыми и знающими!</h5>
+                           <p><span> Алексей Алексеев</span> Дальнобойщик</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/main/фон-блок-Слайдер.png" class="d-block w-100" alt="фон-блок-Слайдер">
+                     <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption-images">
+                           <img src="./img/main/Слайдер-отзывы/Отзыв-Дальнобощик.png" alt="Дальнобощик">
+                           </br>
+                           <img class="carousel-caption-images-star" src="./img/main/svg/Star.svg"
+                              alt="Оценка звезда 5/5">
+                           <h5>Я отвез туда свою машину, чтобы починить ее после того, как в меня врезались и погнули
+                              задний верхний рычаг управления. Они дали мне лучшую оценку, и работа была выполнена очень
+                              быстро! Обслуживание клиентов было потрясающим, они были очень вежливыми и знающими!</h5>
+                           <p><span> Алексей Алексеев</span> Дальнобойщик</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+               </button>
+            </div>
+         </div>
+         <div id="carouselExampleIndicators" class="carousel slide carousel-slidessmall" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active smallSlider">
+                  <div class="smallSlider__smallSlider-textopas">
+                     <p>Отзывы</p>
+                  </div>
+                  <img class="smallSlider__imges" src="./img/main/carousel-slidessmall/carousel-slidessmall.png"
+                     alt="Отзыв Хиддлстон">
+                  <img src="./img/main/carousel-slidessmall/smallSlider5-5.svg" alt="Оценка круглая 5/5"
+                     class="smallSlider__pic">
+                  <p class="smallSlider__text">Я отвез туда свою машину, чтобы починить ее после того, как в меня
+                     врезались и погнули задний
+                     верхний рычаг управления. Они дали мне лучшую оценку, и работа была выполнена очень быстро!
+                     Обслуживание клиентов было потрясающим, они были очень вежливыми и знающими!</p>
+                  <h4 class="smallSlider__name"><span>Алексей Алексеев</span>Дальнобойщик</h4>
+               </div>
+               <div class="carousel-item smallSlider">
+                  <div class="smallSlider__smallSlider-textopas">
+                     <p>Отзывы</p>
+                  </div>
+                  <img class="smallSlider__imges" src="./img/main/carousel-slidessmall/carousel-slidessmall.png"
+                     alt="Отзыв Хиддлстон">
+                  <img src="./img/main/carousel-slidessmall/smallSlider5-5.svg" alt="Оценка круглая 5/5"
+                     class="smallSlider__pic">
+                  <p class="smallSlider__text">Я отвез туда свою машину, чтобы починить ее после того, как в меня
+                     врезались и погнули задний
+                     верхний рычаг управления. Они дали мне лучшую оценку, и работа была выполнена очень быстро!
+                     Обслуживание клиентов было потрясающим, они были очень вежливыми и знающими!</p>
+                  <h4 class="smallSlider__name"><span>Алексей Алексеев</span>Дальнобойщик</h4>
+               </div>
+               <div class="carousel-item smallSlider">
+                  <div class="smallSlider__smallSlider-textopas">
+                     <p>Отзывы</p>
+                  </div>
+                  <img class="smallSlider__imges" src="./img/main/carousel-slidessmall/carousel-slidessmall.png"
+                     alt="Отзыв Хиддлстон">
+                  <img src="./img/main/carousel-slidessmall/smallSlider5-5.svg" alt="Оценка круглая 5/5"
+                     class="smallSlider__pic">
+                  <p class="smallSlider__text">Я отвез туда свою машину, чтобы починить ее после того, как в меня
+                     врезались и погнули задний
+                     верхний рычаг управления. Они дали мне лучшую оценку, и работа была выполнена очень быстро!
+                     Обслуживание клиентов было потрясающим, они были очень вежливыми и знающими!</p>
+                  <h4 class="smallSlider__name"><span>Алексей Алексеев</span>Дальнобойщик</h4>
+               </div>
+            </div>
+         </div>
+         <div id="main__video" class="main__video  __container">
+            <div class="main__video-text">
+               <div class="main__video-texttxt">
+                  <h3 class="main__video-text-title">Статистика ремонта машин</h3>
+                  <p class="main__video-text-text">Техническая статистика авторемонта, которую вы должны знать.
+                     Приезжаете
+                     ли вы на плановый осмотр,
+                     замену масла или ремонт, мы обещаем, что вы будете полностью удовлетворены нашей работой.</p>
+               </div>
+               <div class="main__video-statistics statistics">
+                  <div class="statistics__block1">
+                     <p class="statistics__block-number">20</p>
+                     <div class="statistics__block-arrow statistics__block-arrow-1"></div>
+                     <p class="statistics__block1-text">Многолетний опыт </p>
+                  </div>
+                  <div class="statistics__block2">
+                     <p class="statistics__block-number">2.9к</p>
+                     <div class="statistics__block-arrow statistics__block-arrow-2"></div>
+                     <p class="statistics__block1-text">Почининно машин</p>
+                  </div>
+               </div>
+               <div class="main__video-statistics statistics">
+                  <div class="statistics__block1">
+                     <p class="statistics__block-number">32</p>
+                     <div class="statistics__block-arrow statistics__block-arrow-3"></div>
+                     <p class="statistics__block1-text">Техника и
+                        специалиста </p>
+                  </div>
+                  <div class="statistics__block2">
+                     <p class="statistics__block-number">100%</p>
+                     <div class="statistics__block-arrow statistics__block-arrow-4"></div>
+                     <p class="statistics__block1-text">Клиентов
+                        довольны</p>
+                  </div>
+               </div>
+            </div>
+            <div class="main__video-video">
+               <img src="./img/main/main__video.png" alt="">
+            </div>
+         </div>
+         <div id="main__evaluation" class="main__evaluation">
+            <div class="evaluation __container">
+               <div class="evaluation-text">
+                  <h3 class="evaluation-text-evaluation">Оценка ремонта <span> авто</span></h3>
+                  <p class="evaluation-text-text">Получите оценку ремонта автомобиля на основании информации о
+                     проблеме</p>
+               </div>
+               <div class="evaluation-form">
+                  <input class="evaluation-form-stamp" placeholder="Марка" type="text" name="">
+                  <input class="evaluation-form-model" placeholder="Модель" type="text" name="">
+                  <input class="evaluation-form-year" placeholder="Год" type="text" name="">
+                  <input class="evaluation-form-service" placeholder="Услуга" type="text" name="">
+                  <a href="#"> <button class="evaluation-form-button">Рассчитать</button></a>
+               </div>
+            </div>
+         </div>
+         <div class="main__visit">
+            <div class="main__visit-title visit">
+               <div class="visit-title">
+                  <p>Запланируйте</p>
+               </div>
+               <div class="visit-text">
+                  <h3 class="visit-text-title">Запланируйте <span>ваш визит</span> заранее</h3>
+                  <p class="visit-text-text">Ваш специалист по ремонту и техническому обслуживанию автомобилей</p>
+                  <p class="visit-text-number">8 (800) 555-35-35</p>
+                  <button class="visit-text-button">
+                     <a class="" href="#">
+                        <img class="visit-text-button-black" src="./img/main/svg/calendar-black.svg"
+                           alt="Черный календарь">
+                        Записаться</a>
+                  </button>
+               </div>
+               <div class="visit-image">
+                  <img src="./img/main/грузовик.png" alt="грузовик">
+               </div>
+            </div>
+         </div>
+         <div class="main__contacts">
+            <div class="main__contact">
+               <h3>Контактная информация</h3>
+               <div class="main__contact-map">
+                  <img src="./img/main/contact/map-marker.svg" alt="Маркер для карты">
+                  <div class="main__contact-map-text">
+                     <p>Москва, ул. Неизвестного, 1
+                     <p class="main__contact-map-text-2">55.751426, 37.618879</p>
+                     </p>
+                  </div>
+               </div>
+               <div class="main__contact-call">
+                  <img src="./img/main/contact/call.svg" alt="call">
+                  <p>8 (800) 555-35-35</p>
+               </div>
+               <div class="main__contact-mail">
+                  <img src="./img/main/contact/mail.svg" alt="mail">
+                  <p>Example@kalipta.ru</p>
+               </div>
+               <h3>Время работы</h3>
+               <div class="main__contact-time">
+                  <img src="./img/main/contact/time.svg" alt="time">
+                  <div class="main__contact-map-text">
+                     <p>Пн-Пт: с 8:00 до 22:00
+                     <p class="main__contact-map-text-2">Сб-Вск: с 10:00 до 22:00</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="main__map">
+            <div id="map" style="width:100%; height:529px"></div>
+         </div>
+      </main>
+      <!-- footer -->
+      <footer id="footer" class="footer">
+         <div class="footer__footer __container">
+            <div class="footer__block">
+               <div class="footer__block-element1">
+                  <div class="footer__block-element1-logo-text">
+                     <img class="footer__block-element1-logo" src="./img/footer/Logo_Footer.svg"
+                        alt="Логотип для Footer">
+                     <p class="footer__block-element1-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                        do
+                        amet sint. Velit officia consequat
+                        duis enim velit mollit.</p>
+                  </div>
+                  <div class="footer__block-element1-socialnetwork">
+                     <a href="#"> <img class="footer__block-element1-socialnetwork-inst" src="./img/footer/svg/inst.svg"
+                           alt="inst"></a>
+                     <a href="#"> <img class="footer__block-element1-socialnetwork-telegram"
+                           src="./img/footer/svg/telegram.svg" alt="telegram"></a>
+                     <a href="#"> <img class="footer__block-element1-socialnetwork-youtube"
+                           src="./img/footer/svg/youtube.svg" alt="youtube"></a>
+                  </div>
+               </div>
+               <div class="footer__block-element2">
+                  <h3 class="footer__block-element2-title">Полезные ссылки</h3>
+                  <ul class="footer__block-element2-list">
+                     <li class="footer__block-element2-link"><a href="#">Amet minim mollit </a></li>
+                     <li class="footer__block-element2-link"><a href="#">Amet minim mollit </a></li>
+                     <li class="footer__block-element2-link"><a href="#">Amet minim mollit </a></li>
+                     <li class="footer__block-element2-link"><a href="#">Amet minim mollit </a></li>
+                  </ul>
+               </div>
+               <div class="footer__block-element3">
+                  <h3 class="footer__block-element3-title">Контактная информация</h3>
+                  <ul class="footer__block-element3-link-list">
+                     <li class="footer__block-element3-link"><a href="#">Адрес: Москва, ул Неизвестного 1.</a></li>
+                     <li class="footer__block-element3-link"><a href="#">Телефон: 8 (800) 555-35-35 </a></li>
+                     <li class="footer__block-element3-link"><a href="#">Email : example@kalipta.ru</a></li>
+                  </ul>
+               </div>
+               <div class="footer__block-element4">
+                  <h3 class="footer__block-element4-title">Важная подписка</h3>
+                  <p class="footer__block-element4-text">Подписывайтесь и узнавайте самую важную информацию и
+                     предложения</p>
+                  <div class="footer__block-element4-button">
+                     <input type="text" placeholder="Email" class="footer__block-element4-button-input">
+                     <a href="#">
+                        <div class="footer__block-element4-string"><img src="./img/footer/svg/white-strinf.svg"
+                              alt="Белая Стрелка">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__reservantur">
+            <p class="footer__reservantur-text">©️ 2023 Калипта. Все права защищены</p>
+         </div>
+      </footer>
+   </div>
+
+   <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      </script>
+   <script src="./js/main.js">
+   </script>
+</body>
+
+</html>
